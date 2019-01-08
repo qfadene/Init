@@ -1,1 +1,1 @@
-ps
+systemctl status sshd | grep PID

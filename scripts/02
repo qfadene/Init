@@ -1,0 +1,3 @@
+sudo passwd -l damns
+sudo killall -KILL -u damns
+sudo userdel -r damns
