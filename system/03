@@ -1,1 +1,3 @@
+Afin de renommer de façon permanente notre système il faut modifier le fichier :
+
 /etc/hostname
