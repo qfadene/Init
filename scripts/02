@@ -1,3 +1,17 @@
-sudo passwd -l damns
-sudo killall -KILL -u damns
-sudo userdel -r damns
+#!/bin/bash
+
+echo "Enter the username you want to delete"
+
+read name
+
+a=`ls -l /home | grep $name`
+
+if [ "$a" != "" ]; then	
+	passwd -l $name
+	pkill -u $name
+	crontab -r -u $name
+	userdel -r $name
+	echo "User successfully deleted"
+else
+	echo "Username does not exist"
+fi

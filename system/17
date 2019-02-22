@@ -1,1 +1,1 @@
-ssh login@ipmachinealaquellejeveuxmeconnecter
+ssh login@ipHost -p port

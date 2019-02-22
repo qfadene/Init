@@ -1,2 +1,4 @@
+echo "a : "
 ifconfig -a | grep broadcast | cut -c47-60
-ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2
+echo "b : "
+arp -a | awk -F '(' '{print $2}' | awk -F ')' '{print $1}'
